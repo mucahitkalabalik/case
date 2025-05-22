@@ -15,7 +15,7 @@ Aşağıdaki adımları izleyerek projeyi bilgisayarınıza kurabilirsiniz:
 
 ```bash
 # 1. Repoyu klonlayın
-git clone https://github.com/kullanici-adi/proje-adi.git
+git clone https://github.com/mucahitkalabalik/case.git
 
 # 2. Klasöre geçin
 cd proje-adi
