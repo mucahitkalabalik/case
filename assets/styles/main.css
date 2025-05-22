@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-cairo: "Cairo", sans-serif;
+  --color-custom-bg: #F6F6F6;
+  --color-header-text-2: #4F56D3;
+  --color-active: #4F56D3;
+  --color-notif: #CDFF65;
+}
