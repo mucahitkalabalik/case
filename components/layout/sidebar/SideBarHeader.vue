@@ -12,7 +12,7 @@
       </div>
     </div>
     <div>
-      <img src="/icons/hamburgerMenu.png" />
+      <img src="/icons/Hamburgermenu.png" />
     </div>
   </div>
 </template>
