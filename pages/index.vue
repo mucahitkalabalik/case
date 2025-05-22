@@ -10,7 +10,6 @@
         :selectAll="selectAll"
         @select="onSelect"
         @toggleAll="onToggleAll"
-        @edit="onEditProduct"
       />
       <ProductTableFooter
         :startItem="startItem"

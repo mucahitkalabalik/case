@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-auto rounded-lg shadow">
+  <div class="overflow-x-auto rounded-lg ">
     <table class="min-w-full bg-white">
       <thead>
         <tr class="text-gray-400 text-left">
@@ -11,12 +11,12 @@
               @change="$emit('toggleAll', $event.target.checked)"
             />
           </th>
-          <th class="p-4">Product Name</th>
-          <th class="p-4">Transaction ID</th>
-          <th class="p-4">Date</th>
-          <th class="p-4">Amount</th>
-          <th class="p-4">Status</th>
-          <th class="p-4 text-right"></th>
+          <th class="p-4 text-sm text-start">Product Name</th>
+          <th class="p-4 text-sm text-start">Transaction ID</th>
+          <th class="p-4 text-sm text-start">Date</th>
+          <th class="p-4 text-sm text-start">Amount</th>
+          <th class="p-4 text-sm text-start">Status</th>
+          <th class="p-4 text-sm text-right">Edit</th>
         </tr>
       </thead>
       <tbody>
@@ -45,15 +45,15 @@
               class="w-10 h-10 rounded object-cover"
             />
             <div class="flex flex-col gap-1">
-              <div class="text-sm font-semibold">{{ product.name }}</div>
+              <div class="text-sm font-semibold min-w-[150px]">{{ product.name }}</div>
               <div class="text-xs text-gray-400">{{ product.category }}</div>
             </div>
           </td>
-          <td class="font-light text-gray-500">{{ product.productCode }}</td>
+          <td class="text-sm font-light">{{ product.productCode }}</td>
           <td class="p-4 font-light text-gray-400">
             {{ product.date || "-" }}
           </td>
-          <td class="p-4 font-light text-gray-600">
+          <td class="p-4 ">
             ₺{{
               product.price.toLocaleString("tr-TR", {
                 minimumFractionDigits: 2,

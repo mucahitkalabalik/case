@@ -1,4 +1,4 @@
- const Routes = [
+const Routes = [
   {
     title: "MAIN MENU",
     links: [
@@ -21,7 +21,7 @@
   {
     title: "ANALYTICS",
     links: [
-      { name: "Sales", icon: "sales" },
+      { name: "Sales", icon: "sales", counter: 49 },
       {
         name: "Point of Sales",
         icon: "point",
@@ -34,7 +34,7 @@
   {
     title: "APPS",
     links: [
-      { name: "Chat", icon: "chat" },
+      { name: "Chat", icon: "chat", counter: 49 },
       { name: "Calendar", icon: "calendar" },
       { name: "Email", icon: "email" },
     ],

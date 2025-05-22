@@ -34,12 +34,19 @@ function toggleMenu(name) {
                 :to="link.path || '/'"
                 class="flex items-center gap-2 flex-grow p-1"
               >
+              <div class="flex items-center gap-2 flex-grow">
+
                 <img :src="getIcon(link.icon)" alt="" class="w-6 h-6" />
                 <span
-                  class="hidden md:inline text-gray-500"
-                  :class="link.children ? 'md:text-white' : ''"
+                class="hidden md:inline text-gray-500"
+                :class="link.children ? 'md:text-white' : ''"
                 >
-                  {{ link.name }}
+                {{ link.name }} 
+              </span>
+            </div>
+
+                <span class="hidden md:inline bg-notif rounded-full p-1 font-semibold" v-if="link.counter">
+                  {{ link.counter }}
                 </span>
               </nuxt-link>
               <button v-if="link.children" class="text-gray-400 hidden md:inline">
