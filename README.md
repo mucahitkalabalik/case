@@ -1,5 +1,7 @@
 # 🚀 Case Admin Panel
 
+Demo: https://case-dashboard.netlify.app/
+
 ## 🧩 Kullanılan Teknolojiler
 
 - ✅ [Nuxt 3](https://nuxt.com) – Vue 3 tabanlı framework
