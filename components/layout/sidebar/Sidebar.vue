@@ -2,6 +2,7 @@
 import SearchBar from "~/components/layout/sidebar/SearchBar.vue";
 import SideBarHeader from "~/components/layout/sidebar/SideBarHeader.vue";
 import SideBarRoutes from "~/components/layout/sidebar/SideBarRoutes.vue";
+
 </script>
 
 <template>
