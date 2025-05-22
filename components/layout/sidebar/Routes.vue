@@ -10,15 +10,15 @@ const openMenus = ref({ Products: true });
 
 function toggleMenu(name) {
   openMenus.value[name] = !openMenus.value[name];
-  console.log(openMenus, "openMenus");
 }
 </script>
 
 <template>
-  <nav class=" bg-white flex flex-col shadow-lg px-6 border-gray-200">
+  <nav class="bg-white flex flex-col px-2 md:px-6 border-gray-200  transition-all duration-300">
     <ul>
       <li v-for="route in Routes" :key="route.title" class="mb-6">
-        <h3 class="py-2 font-semibold text-gray-300">{{ route.title }}</h3>
+        <!-- Kategori başlığı sadece md ve üzeri görünür -->
+        <h3 class="py-2 font-semibold text-gray-300 hidden md:block">{{ route.title }}</h3>
         <ul>
           <li
             v-for="link in route.links"
@@ -37,12 +37,15 @@ function toggleMenu(name) {
               >
                 <img :src="getIcon(link.icon)" alt="" class="w-6 h-6" />
                 <span
-                  class="text-gray-500"
-                  :class="link.children ? 'text-white' : ''"
-                  >{{ link.name }}</span
+                  class="hidden md:inline text-gray-500"
+                  :class="link.children ? 'md:text-white' : ''"
                 >
+                  {{ link.name }}
+                </span>
               </nuxt-link>
-              <button v-if="link.children" class="text-gray-400">
+
+              <!-- Aç/Kapa oku -->
+              <button v-if="link.children" class="text-gray-400 hidden md:inline">
                 <svg
                   :class="{ 'rotate-270': openMenus[link.name] }"
                   class="w-4 h-4 transition-transform"
@@ -60,9 +63,11 @@ function toggleMenu(name) {
                 </svg>
               </button>
             </div>
+
+            <!-- Alt menü -->
             <ul
               v-if="link.children && openMenus[link.name]"
-              class="mt-1rounded-md p-1"
+              class="mt-1 rounded-md p-1 hidden md:block"
             >
               <li
                 v-for="child in link.children"
@@ -75,7 +80,7 @@ function toggleMenu(name) {
                   class="flex items-center gap-2"
                 >
                   <img :src="getIcon(child.icon)" alt="" class="w-6 h-6" />
-                  {{ child.name }}
+                  <span class="hidden md:inline">{{ child.name }}</span>
                 </nuxt-link>
               </li>
             </ul>

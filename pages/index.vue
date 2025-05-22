@@ -1,5 +1,9 @@
 <template>
-    <div class="font-cairo font-semibold text-xl">
-    Bu metin Cairo fontuyla yazıldı!
+  <div class="font-cairo font-semibold text-xl">
+    <cards />
   </div>
 </template>
+
+<script setup>
+import cards from "~/components/app/cards.vue";
+</script>

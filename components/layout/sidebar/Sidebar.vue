@@ -6,9 +6,9 @@ import SideBarRoutes from "~/components/layout/sidebar/Routes.vue";
 </script>
 
 <template>
-  <nav class="w-70 bg-white flex flex-col min-h-screen shadow-lg  border-gray-200">
+  <nav class="hidden sm:flex md:flex w-20 md:w-72 bg-white flex-col md:min-h-screen shadow-lg border-gray-200 transition-all duration-300">
     <SideBarHeader />
-    <SearchBar />
-    <SideBarRoutes />
+    <SearchBar  class="sidebar-item"/>
+    <SideBarRoutes class="sidebar-item" />
   </nav>
 </template>

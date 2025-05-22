@@ -6,9 +6,9 @@ import Sidebar from "~/components/layout/sidebar/Sidebar.vue";
 <template>
   <div class="flex min-h-screen bg-custom-bg">
     <Sidebar />
-    <div class="flex-1 flex flex-col overflow-auto px-10">
+    <div class="flex-1 flex flex-col overflow-auto ">
       <Header />
-      <main class="flex-1 p-6">
+      <main class="flex-1 pl-6 pt-6 pr-10">
         <NuxtPage />
       </main>
     </div>
