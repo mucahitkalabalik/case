@@ -17,7 +17,6 @@ function toggleMenu(name) {
   <nav class="bg-white flex flex-col px-2 md:px-6 border-gray-200  transition-all duration-300">
     <ul>
       <li v-for="route in Routes" :key="route.title" class="mb-6">
-        <!-- Kategori başlığı sadece md ve üzeri görünür -->
         <h3 class="py-2 font-semibold text-gray-300 hidden md:block">{{ route.title }}</h3>
         <ul>
           <li
@@ -43,8 +42,6 @@ function toggleMenu(name) {
                   {{ link.name }}
                 </span>
               </nuxt-link>
-
-              <!-- Aç/Kapa oku -->
               <button v-if="link.children" class="text-gray-400 hidden md:inline">
                 <svg
                   :class="{ 'rotate-270': openMenus[link.name] }"
@@ -63,8 +60,6 @@ function toggleMenu(name) {
                 </svg>
               </button>
             </div>
-
-            <!-- Alt menü -->
             <ul
               v-if="link.children && openMenus[link.name]"
               class="mt-1 rounded-md p-1 hidden md:block"

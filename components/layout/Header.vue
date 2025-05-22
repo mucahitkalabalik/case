@@ -1,10 +1,6 @@
-<script setup>
-// İMPORTLAR YOK
-</script>
-
 <template>
   <header
-    class="bg-white shadow-sm md:rounded-xl  md:mt-[10px] md:ml-[30px] h-[88px] p-0 m-0 rounded-none md:h-auto md:p-[18px]"
+    class="bg-white shadow-sm md:rounded-xl  md:mt-[10px] md:ml-[30px] h-[88px] p-0 m-0 rounded-none md:h-auto md:p-[18px] lg:mr-10"
   >
     <div class="flex justify-between items-center h-full">
       <div class="hidden md:block">
