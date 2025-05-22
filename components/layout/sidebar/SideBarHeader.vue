@@ -1,5 +1,5 @@
 <script setup>
-import hamburgerMenu from "~/assets/icons/hamburgerMenu.png";
+import hamburgerMenu from "/icons/hamburgerMenu.png";
 </script>
 
 <template>

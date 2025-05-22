@@ -1,13 +1,13 @@
 <script setup>
-import themeIcon from "@/assets/icons/theme.png";
-import themeDark from "@/assets/icons/themeDark.png";
-import modeBg from "@/assets/icons/modeBg.png";
-import ellipse from "@/assets/icons/ellipse.png";
-import set from "@/assets/icons/set.png";
-import net from "@/assets/icons/net.png";
-import notif from "@/assets/icons/notif.png";
-import message from "@/assets/icons/message.png";
-import bottom from "@/assets/icons/bottom.png";
+import themeIcon from "/icons/theme.png";
+import themeDark from "/icons/themeDark.png";
+import modeBg from "/icons/modeBg.png";
+import ellipse from "/icons/ellipse.png";
+import set from "/icons/set.png";
+import net from "/icons/net.png";
+import notif from "/icons/notif.png";
+import message from "/icons/message.png";
+import bottom from "/icons/bottom.png";
 </script>
 
 <template>
