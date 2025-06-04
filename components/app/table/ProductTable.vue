@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-auto rounded-lg ">
+  <div class="overflow-x-auto rounded-lg">
     <table class="min-w-full bg-white">
       <thead>
         <tr class="text-gray-400 text-left">
@@ -28,12 +28,12 @@
           <td
             class="p-4"
             :class="
-              selected.includes(product.id) ? 'border-l-2 border-active' : ''
+              selected.includes(product.id) ? 'border-l-2 border-active' : 'border-l-2 border-transparent'
             "
           >
             <input
               type="checkbox"
-              class="w-5 h-5"
+              class="w-5 h-5 cursor-pointer"
               :checked="selected.includes(product.id)"
               @change="$emit('select', product.id, $event.target.checked)"
             />
@@ -45,7 +45,9 @@
               class="w-10 h-10 rounded object-cover"
             />
             <div class="flex flex-col gap-1">
-              <div class="text-sm font-semibold min-w-[150px]">{{ product.name }}</div>
+              <div class="text-sm font-semibold min-w-[150px]">
+                {{ product.name }}
+              </div>
               <div class="text-xs text-gray-400">{{ product.category }}</div>
             </div>
           </td>
@@ -53,7 +55,7 @@
           <td class="p-4 font-light text-gray-400">
             {{ product.date || "-" }}
           </td>
-          <td class="p-4 ">
+          <td class="p-4">
             ₺{{
               product.price.toLocaleString("tr-TR", {
                 minimumFractionDigits: 2,

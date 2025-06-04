@@ -3,7 +3,7 @@
     <cards />
     <div class="mt-10 bg-white rounded-lg p-4">
       <div class="product-table-scroll-anchor"></div>
-      <ProductTableHeader :search="search" @update:search="val => search = val" @add="onAddProduct" />
+      <ProductTableHeader :search="search" @update:search="val => search = val"/>
       <ProductTable
         :products="filteredProducts"
         :selected="selected"
