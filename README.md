@@ -1,75 +1,27 @@
-# Nuxt Minimal Starter
+# 🚀 Case Admin Panel
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Demo: https://case-dashboard.netlify.app/
 
-## Setup
+## 🧩 Kullanılan Teknolojiler
 
-Make sure to install dependencies:
+- ✅ [Nuxt 3](https://nuxt.com) – Vue 3 tabanlı framework
+- 🎨 [TailwindCSS](https://tailwindcss.com) – Yardımcı sınıflarla stil sistemi
+- 📦 [Pinia](https://pinia.vuejs.org) – Modern state management
+- 🌐 [Axios](https://axios-http.com) – HTTP istekleri için
+
+## 📦 Kurulum
+
+Aşağıdaki adımları izleyerek projeyi bilgisayarınıza kurabilirsiniz:
 
 ```bash
-# npm
+# 1. Repoyu klonlayın
+git clone https://github.com/mucahitkalabalik/case.git
+
+# 2. Klasöre geçin
+cd proje-adi
+
+# 3. Bağımlılıkları yükleyin
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# 4. Geliştirme sunucusunu başlatın
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
