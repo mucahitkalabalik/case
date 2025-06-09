@@ -1,6 +1,6 @@
 # 🚀 Case Admin Panel
 
-Demo: https://case-dashboard.netlify.app/
+Demo: https://dashboard-vue-v1.netlify.app/
 
 ## 🧩 Kullanılan Teknolojiler
 
